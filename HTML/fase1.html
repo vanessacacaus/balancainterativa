@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Balança Interativa</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/tipo1.css">
+	<script type="text/javascript" src= "../LIBS/FileSaver.js" DEFER></script>
+	<script type="text/javascript" src= "../JS/fase1.js" DEFER></script>
+	<script type="text/javascript" src= "../JS/mover.js" DEFER></script>
+	<script type="text/javascript" src="../lib/jquery-2.1.4.min.js" DEFER></script>
+	<script type="text/javascript" src="../lib/jquery-ui.js" DEFER></script>
+</head>
+<body>
+	<img id="fundo" src="../IMAGENS/fundoFase.png" >
+	<img id="btHistorico" src="../IMAGENS/btHistorico.png" onclick="mostraHistorico()">
+	<a href="menu.html">
+		<img id="home" src="../IMAGENS/home.png" >
+	</a>
+	<!---<p id="movimentos"> Movimentos: 0</p>-->
+	
+	
+
+	<img id="BALANCA" src="../IMAGENS/BALANCA/balanca.png" >
+	<img id="retirar" src="../IMAGENS/retirar.png" onclick="RetirarPesos()">
+	<img id="ex" src="../IMAGENS/expressao1.png" onclick="mostraExp()">
+	<div id="exTexto"></div>
+	<div id="nivel">Nível 1</div>
+	<div id="div1_1" name="xablau" ondrop="drop(event)" ondragover="allowDrop(event, div1_1)"  ></div>
+	<div id="div1_2" ondrop="drop(event)" ondragover="allowDrop(event, div1_2)"  ></div>
+	<div id="div1_3" ondrop="drop(event)" ondragover="allowDrop(event, div1_3)"  ></div>
+	<div id="div1_4" ondrop="drop(event)" ondragover="allowDrop(event, div1_4)"  ></div>
+	<div id="div1_5" ondrop="drop(event)" ondragover="allowDrop(event, div1_5)"  ></div>
+	<div id="div2_1" ondrop="drop(event)" ondragover="allowDrop(event, div2_1)"  ></div>
+	<div id="div2_2" ondrop="drop(event)" ondragover="allowDrop(event, div2_2)"  ></div>
+	<div id="div2_3" ondrop="drop(event)" ondragover="allowDrop(event, div2_3)"  ></div>
+	<div id="div2_4" ondrop="drop(event)" ondragover="allowDrop(event, div2_4)"  ></div>
+	<div id="div2_5" ondrop="drop(event)" ondragover="allowDrop(event, div2_5)"  ></div>
+
+	<img id="prateleira1" src="../IMAGENS/prateleira.png" >
+	<img id="prateleira2" src="../IMAGENS/prateleira.png" >
+
+	<div id="sacolas1"  ondrop="drop(event)" ondragover="allowDrop(event, sacolas1)"  >
+		<div id="A"  name="A" style="width: 35px; height:60px;  background-image: url('../IMAGENS/SACOLAS/a.png');" draggable="true" ondragstart="drag(event)"></div>
+	</div>
+
+	<div id="sacolas2" ondrop="drop(event)" ondragover="allowDrop(event, sacolas2)"  >
+		<div id="B"  name="B" style="width: 35px; height:60px;  background-image: url('../IMAGENS/SACOLAS/b.png');" draggable="true" ondragstart="drag(event)"></div>
+	</div>
+	<div id="sacolas3" ondrop="drop(event)" ondragover="allowDrop(event, sacolas3)"  >
+		<div id="C"  name="C" style="width: 35px; height:60px;  background-image: url('../IMAGENS/SACOLAS/c.png');" draggable="true" ondragstart="drag(event)"></div>
+	</div>
+	<div id="sacolas4" ondrop="drop(event)" ondragover="allowDrop(event, sacolas4)"  >
+		<div id="D"  name="D" style="width: 35px; height:60px;  background-image: url('../IMAGENS/SACOLAS/d.png');" draggable="true" ondragstart="drag(event)"></div></div>
+	<div id="sacolas5" ondrop="drop(event)" ondragover="allowDrop(event, sacolas5)"  >
+		<div id="E"  name="E" style="width: 35px; height:60px;  background-image: url('../IMAGENS/SACOLAS/e.png');" draggable="true" ondragstart="drag(event)"></div>
+	</div>
+	<div id="sacolas6" ondrop="drop(event)" ondragover="allowDrop(event, sacolas6)"  >
+		<div id="F"  name="F" style="width: 35px; height:60px;  background-image: url('../IMAGENS/SACOLAS/f.png');" draggable="true" ondragstart="drag(event)"></div>
+	</div>
+	<div id="sacolas7" ondrop="drop(event)" ondragover="allowDrop(event, sacolas7)"  >
+		<div id="G"  name="G" style="width: 35px; height:60px;  background-image: url('../IMAGENS/SACOLAS/g.png');" draggable="true" ondragstart="drag(event)"></div>
+	</div>
+	<div id="sacolas8" ondrop="drop(event)" ondragover="allowDrop(event, sacolas8)"  >
+		<div id="H"  name="H" style="width: 35px; height:60px;  background-image: url('../IMAGENS/SACOLAS/h.png');" draggable="true" ondragstart="drag(event)"></div>
+	</div>
+	<div id="sacolas9" ondrop="drop(event)" ondragover="allowDrop(event, sacolas9)"  >
+		<div id="I"  name="I" style="width: 35px; height:60px;  background-image: url('../IMAGENS/SACOLAS/i.png');" draggable="true" ondragstart="drag(event)"></div>
+	</div>
+	
+	<div id="pesos1" ondrop="drop(event)" ondragover="allowDrop(event, pesos1)"  >
+		<div id="01"  name="1" style="width: 35px; height:60px;  background-image: url('../IMAGENS/PESOS/1.png');" draggable="true" ondragstart="drag(event)"></div>
+	</div>
+	<div id="pesos2" ondrop="drop(event)" ondragover="allowDrop(event, pesos2)"  >
+		<div id="02"  name="2" style="width: 35px; height:60px;  background-image: url('../IMAGENS/PESOS/2.png');" draggable="true" ondragstart="drag(event)"></div>
+	</div>
+	<div id="pesos3" ondrop="drop(event)" ondragover="allowDrop(event, pesos3)"  >
+		<div id="03"  name="3" style="width: 35px; height:60px;  background-image: url('../IMAGENS/PESOS/3.png');" draggable="true" ondragstart="drag(event)"></div>
+	</div>
+	<div id="pesos4" ondrop="drop(event)" ondragover="allowDrop(event, pesos4)"  >
+		<div id="04"  name="4" style="width: 35px; height:60px;  background-image: url('../IMAGENS/PESOS/4.png');" draggable="true" ondragstart="drag(event)"></div>
+	</div>
+	<div id="pesos5" ondrop="drop(event)" ondragover="allowDrop(event, pesos5)"  >
+		<div id="05"  name="5" style="width: 35px; height:60px;  background-image: url('../IMAGENS/PESOS/5.png');" draggable="true" ondragstart="drag(event)"></div>
+	</div>
+	<div id="pesos6" ondrop="drop(event)" ondragover="allowDrop(event, pesos6)"  >
+		<div id="06"  name="6" style="width: 35px; height:60px;  background-image: url('../IMAGENS/PESOS/6.png');" draggable="true" ondragstart="drag(event)"></div>
+	</div>
+	<div id="pesos7" ondrop="drop(event)" ondragover="allowDrop(event, pesos7)"  >
+		<div id="07"  name="7" style="width: 35px; height:60px;  background-image: url('../IMAGENS/PESOS/7.png');" draggable="true" ondragstart="drag(event)"></div>
+	</div>
+	<div id="pesos8" ondrop="drop(event)" ondragover="allowDrop(event, pesos8)"  >
+		<div id="08"  name="8" style="width: 35px; height:60px;  background-image: url('../IMAGENS/PESOS/8.png');" draggable="true" ondragstart="drag(event)"></div>
+	</div>
+	<div id="pesos9" ondrop="drop(event)" ondragover="allowDrop(event, pesos9)"  >
+		<div id="09"  name="9" style="width: 35px; height:60px;  background-image: url('../IMAGENS/PESOS/9.png');" draggable="true" ondragstart="drag(event)"></div>
+	</div>
+
+		
+	
+	
+	<img id="painel" src="../IMAGENS/painel.png" >
+	 <input type="text" id="RA" onkeypress="keyEnterPressed(event, 'A');">
+	<button  id="CA" onclick="checarA()" >A</button>
+	 <input type="text" id="RB" onkeypress="keyEnterPressed(event, 'B');">
+	<button id="CB" onclick="checarB()">B</button>
+	 <input type="text" id="RC" onkeypress="keyEnterPressed(event, 'C');">
+	<button id="CC" onclick="checarC()">C</button>
+	 <input type="text" id="RD" onkeypress="keyEnterPressed(event, 'D');">
+	<button id="CD" onclick="checarD()">D</button>
+	 <input type="text" id="RE" onkeypress="keyEnterPressed(event, 'E');">
+	<button id="CE" onclick="checarE()">E</button>
+	 <input type="text" id="RF" onkeypress="keyEnterPressed(event, 'F');">
+	<button id="CF" onclick="checarF()">F</button>
+	 <input type="text" id="RG" onkeypress="keyEnterPressed(event, 'G');">
+	<button id="CG" onclick="checarG()">G</button>
+	 <input type="text" id="RH" onkeypress="keyEnterPressed(event, 'H');">
+	<button id="CH" onclick="checarH()">H</button>
+	 <input type="text" id="RI" onkeypress="keyEnterPressed(event, 'I');">
+	<button id="CI" onclick="checarI()">I</button>
+	<!---<button id="save" onclick="savaTexto()">Salvar</button>
+	<button  id="mostra" onclick="mostraExp()">Mostrar Expressão</button>-->
+
+	<div id="boxFeedback">
+		<img id="feedback" src="../IMAGENS/feedback.png">
+		<a href="../HTML/fase2.html"><img id="btSim" src="../IMAGENS/sim.png"></a>
+		<a href="../HTML/fase1.html"><img id="btNao" src="../IMAGENS/nao.png"></a>
+		<div id="txtFeedback"> </div>
+	</div>
+
+	
+	<div id="anotacoes" > 
+		<img id="boxHistorico" src="../IMAGENS/boxHistorico.png" >		
+		<textarea id="boxHistArea" ></textarea>
+	</div>	
+<!---<canvas id="myCanvas" width="400" height="400" style="border:1px solid #000000;">
+</canvas>-->
+
+</body>
+</html>

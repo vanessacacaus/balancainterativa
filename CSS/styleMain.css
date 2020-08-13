@@ -1,0 +1,62 @@
+#fundo{
+	position: absolute;
+}
+
+#topo{
+	position: absolute;
+	margin-left: 210px;
+	margin-top: 80px;
+}
+
+#iniciar{
+	position: absolute;
+	margin-left: 325px;
+	margin-top: 380px;
+}
+
+#esquerda{
+	position: absolute;
+	margin-left: 245px;
+	margin-top: 500px;
+}
+
+#direita{
+	position: absolute;
+	margin-left: 615px;
+	margin-top: 500px;
+}
+
+#nivel{
+	position: absolute;
+	margin-left: 434px;
+	margin-top: 520px;
+	color: white;
+	font-size: 32px;
+}
+
+#sobre{
+	position: absolute;
+	margin-left: 850px;
+	margin-top: 550px;
+}
+
+#footer{
+	position: absolute;
+	margin-left: 40px;
+	margin-top: 360px;
+}
+
+#participantes{
+	position: absolute;
+	margin-left: 120px;
+	margin-top: 400px;
+	text-align: center;
+
+}
+
+p{
+	color: white;
+	padding: 0px;
+	margin: 5px;
+}
+

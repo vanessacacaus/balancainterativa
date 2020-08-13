@@ -1,0 +1,510 @@
+  div, input, button, #BALANCA, #SINAL{
+	position: absolute;
+	z-index: 0;
+}
+
+
+p{
+	position: absolute;
+	z-index: 1;
+}
+
+#retirar{
+	position: absolute;
+	margin-top: 410px;
+	margin-left: 560px; 
+}
+
+#ex{
+	position: absolute;
+	margin-top: 450px;
+	margin-left: 380px; 
+}
+
+#exTexto{
+	position: absolute;
+	width: 200px;
+	height: 50px;
+	margin-top: 465px;
+	margin-left: 380px; 
+	text-align: center;
+	color: white;
+	display: none;
+}
+
+#nivel{
+	width: 210px;
+	height: 50px;
+	position: absolute;
+	margin-left: 370px; 
+	margin-top: 30px;
+	padding-top: 10px;
+	font-size: 30px; 
+	background-color: white;
+	text-align: center;
+	border-radius: 20px;
+	color: brown;
+}
+
+#fundo{
+	position: absolute;
+}
+
+#home{
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+#painel{
+	position: absolute;
+	margin-left: 180px;
+	margin-top: 500px;
+}
+
+#BALANCA{
+  	margin-left: 230px;
+  	margin-top: 275px;
+}
+
+#SINAL{
+	left:50%;
+  	top: 50%;
+    width: 80px;
+    height: 60px;
+    margin-left: -225px;
+    margin-top: -58px;
+}
+
+#div1_1{
+	position: absolute;
+	width: 35px;
+  	height: 65px;
+	margin-left: 230px;
+	margin-top: 270px;
+  	
+}
+
+#div1_2{
+	position: absolute;
+	width: 35px;
+  	height: 65px;
+	margin-left: 270px;
+	margin-top: 270px;
+  
+}
+
+#div1_3{
+	position: absolute;
+	width: 35px;
+  	height: 65px;
+	margin-left: 310px;
+	margin-top: 270px;
+  	
+}
+
+#div1_4{
+	position: absolute;
+	width: 35px;
+  	height: 65px;
+	margin-left: 350px;
+	margin-top: 270px;
+  	
+}
+
+#div1_5{
+	position: absolute;
+	width: 35px;
+  	height: 65px;
+	margin-left: 390px;
+	margin-top: 270px;
+  	
+}
+
+#div2_1{
+	position: absolute;
+	width: 35px;
+  	height: 65px;
+	margin-left: 525px;
+	margin-top: 270px;
+  	
+}
+
+#div2_2{
+	position: absolute;
+	width: 35px;
+  	height: 65px;
+	margin-left: 565px;
+	margin-top: 270px;
+  	
+}
+
+#div2_3{
+	position: absolute;
+	width: 35px;
+  	height: 65px;
+	margin-left: 605px;
+	margin-top: 270px;
+  	
+}
+
+#div2_4{
+	position: absolute;
+	width: 35px;
+  	height: 65px;
+	margin-left: 645px;
+	margin-top: 270px;
+  	
+}
+
+#div2_5{
+	position: absolute;
+	width: 35px;
+  	height: 65px;
+	margin-left: 685px;
+	margin-top: 270px;
+  	
+}
+
+#prateleira1{
+	position: absolute;
+	margin-top: 125px;
+	margin-left: 60px;
+}
+
+#prateleira2{
+	position: absolute;
+	margin-top: 125px;
+	margin-left: 500px;
+}
+
+#sacolas1{
+	position: absolute;
+	margin-top: 132px;
+	margin-left: 75px;
+	width: 35px;
+	height: 60px;
+  	
+  	text-align: center;
+}
+
+#sacolas2{
+	position: absolute;
+	margin-top: 132px;
+	margin-left: 115px;
+	width: 35px;
+	height: 60px;
+  	
+  	text-align: center;
+}
+
+#sacolas3{
+	position: absolute;
+	margin-top: 132px;
+	margin-left: 155px;
+	width: 35px;
+	height: 60px;
+  	
+  	text-align: center;
+}
+
+#sacolas4{
+	position: absolute;
+	margin-top: 132px;
+	margin-left: 195px;
+	width: 35px;
+	height: 60px;
+  	
+  	text-align: center;
+}
+
+#sacolas5{
+	position: absolute;
+	margin-top: 132px;
+	margin-left: 235px;
+	width: 35px;
+	height: 60px;
+  	
+  	text-align: center;
+}
+
+#sacolas6{
+	position: absolute;
+	margin-top: 132px;
+	margin-left: 275px;
+	width: 35px;
+	height: 60px;
+  	
+  	text-align: center;
+}
+
+#sacolas7{
+	position: absolute;
+	margin-top: 132px;
+	margin-left: 315px;
+	width: 35px;
+	height: 60px;
+  	
+  	text-align: center;
+}
+
+#sacolas8{
+	position: absolute;
+	margin-top: 132px;
+	margin-left:355px;
+	width: 35px;
+	height: 60px;
+  	
+  	text-align: center;
+}
+
+#sacolas9{
+	position: absolute;
+	margin-top: 132px;
+	margin-left: 395px;
+	width: 35px;
+	height: 60px;
+  	
+  	text-align: center;
+}
+
+#pesos1{
+	position: absolute;
+	margin-top: 132px;
+	margin-left: 515px;
+	width: 35px;
+	height: 60px;
+  	
+  	text-align: center;
+}
+
+#pesos2{
+	position: absolute;
+	margin-top: 132px;
+	margin-left: 555px;
+	width: 35px;
+	height: 60px;
+  	
+  	text-align: center;
+}
+
+#pesos3{
+	position: absolute;
+	margin-top: 132px;
+	margin-left: 595px;
+	width: 35px;
+	height: 60px;
+  	
+  	text-align: center;
+}
+
+#pesos4{
+	position: absolute;
+	margin-top: 132px;
+	margin-left: 635px;
+	width: 35px;
+	height: 60px;
+  	
+  	text-align: center;
+}
+
+#pesos5{
+	position: absolute;
+	margin-top: 132px;
+	margin-left: 675px;
+	width: 35px;
+	height: 60px;
+  	
+  	text-align: center;
+}
+
+#pesos6{
+	position: absolute;
+	margin-top: 132px;
+	margin-left: 715px;
+	width: 35px;
+	height: 60px;
+  	
+  	text-align: center;
+}
+
+#pesos7{
+	position: absolute;
+	margin-top: 132px;
+	margin-left: 755px;
+	width: 35px;
+	height: 60px;
+  	
+  	text-align: center;
+}
+
+#pesos8{
+	position: absolute;
+	margin-top: 132px;
+	margin-left:795px;
+	width: 35px;
+	height: 60px;
+  	
+  	text-align: center;
+}
+
+#pesos9{
+	position: absolute;
+	margin-top: 132px;
+	margin-left: 835px;
+	width: 35px;
+	height: 60px;
+  	
+  	text-align: center;
+}
+
+
+#save{
+	margin-top: 80px;
+}
+
+#mostra{
+	margin-top: 100px;
+}
+
+
+#RA, #RB, #RC, #RD, #RE, #RF, #RG, #RH, #RI{
+	width: 40px;
+	height: 32px;
+	margin-top: 553px;
+  	text-align: center;
+  	border-radius: 5px;
+}
+
+#CA, #CB, #CC, #CD, #CE, #CF, #CG, #CH, #CI{
+	left:50%;
+  	top: 50%;
+	margin-left: -425px;
+  	margin-top: 230px;
+  	display: none;
+}
+
+#RA{
+	margin-left: 215px;
+}
+
+#RB{
+	margin-left: 275px;
+}
+
+#RC{
+	margin-left: 335px;
+}
+
+#RD{
+	margin-left: 395px;
+}
+
+#RE{
+	margin-left: 455px;
+}
+
+#RF{
+	margin-left: 515px;
+}
+
+#RG{
+	margin-left: 575px;
+}
+
+#RH{
+	margin-left: 635px;
+}
+
+#RI{
+	margin-left: 695px;
+}
+
+#CB{
+	margin-left: -305px;
+}
+
+#CC{
+	margin-left: -185px;
+}
+
+#CD{
+	margin-left: -65px;
+}
+
+#CE{
+	margin-left: 55px;
+}
+
+#CF{
+	margin-left: 175px;
+}
+
+#CG{
+	margin-left: 295px;
+}
+
+#CH{
+	margin-left: 415px;
+}
+
+#CI{
+	margin-left: 535px;
+}
+
+#btSim, #btNao, #feedback, #txtFeedback{
+	position: absolute;
+}
+
+#boxFeedback{
+	display: none;
+}
+
+#txtFeedback{
+	margin-left: 400px;
+    margin-top: 220px;
+    width: 300px;
+    font-size: 25px;
+}
+
+#btSim{
+	margin-left: 250px;
+    margin-top: 400px;
+}
+
+#btNao{
+	margin-left: 550px;
+    margin-top: 400px;
+}
+
+#btHistorico{
+	position: absolute;
+	margin-top: 470px;
+	margin-left: 50px;
+}
+
+#anotacoes{
+	display: none;
+
+}
+
+#boxHistorico{
+	position: absolute;
+	margin-top: 220px;
+	margin-left: 70px; 
+}
+
+#boxHistArea{
+	position: absolute;
+	margin-top: 253px;
+	margin-left: 100px;
+	border: none;
+	border-radius: 10px; 
+	width: 458px;
+	height: 246px;
+	resize: none;
+}
+
+.isMoving {
+   z-index: 1001 !important;
+}

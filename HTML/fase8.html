@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Balança Interativa</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/tipo1.css">
+	<script type="text/javascript" src= "../LIBS/FileSaver.js" DEFER></script>
+	<script type="text/javascript" src= "../JS/fase8.js" DEFER></script>
+</head>
+<body>
+	<img id="fundo" src="../IMAGENS/fundoFase.png" >
+	<a href="menu.html">
+		<img id="home" src="../IMAGENS/home.png" >
+	</a>
+	<!---<p id="movimentos"> Movimentos: 0</p>-->
+	
+	
+
+	<img id="SINAL" src="../IMAGENS/SINAIS/igual.png" >
+	<img id="ex" src="../IMAGENS/expressao1.png" onclick="mostraExp()">
+	<div id="exTexto"></div>
+	<div id="nivel">Nível 8</div>
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"  ></div>
+	<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"  ></div>
+
+	<img id="prateleira1" src="../IMAGENS/prateleira.png" >
+	<img id="prateleira2" src="../IMAGENS/prateleira.png" >
+	<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"  >
+
+		<img id="A" name="A" src="../IMAGENS/SACOLAS/a.png" draggable="true" ondragstart="drag(event)" width="35" height="60">
+		<img id="B" name="B" src="../IMAGENS/SACOLAS/b.png" draggable="true" ondragstart="drag(event)" width="35" height="60" >
+		<img id="C" name="C" src="../IMAGENS/SACOLAS/c.png" draggable="true" ondragstart="drag(event)" width="35" height="60">
+		<img id="D" name="D" src="../IMAGENS/SACOLAS/d.png" draggable="true" ondragstart="drag(event)" width="35" height="60" >
+		<img id="E" name="E" src="../IMAGENS/SACOLAS/e.png" draggable="true" ondragstart="drag(event)" width="35" height="60">
+		<img id="F" name="F" src="../IMAGENS/SACOLAS/f.png" draggable="true" ondragstart="drag(event)" width="35" height="60" >
+		<img id="G" name="G" src="../IMAGENS/SACOLAS/g.png" draggable="true" ondragstart="drag(event)" width="35" height="60">
+		<img id="H" name="H" src="../IMAGENS/SACOLAS/h.png" draggable="true" ondragstart="drag(event)" width="35" height="60" >
+		<img id="I" name="I" src="../IMAGENS/SACOLAS/i.png" draggable="true" ondragstart="drag(event)" width="35" height="60">
+
+	</div>
+	<div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"  >
+
+		<img id="01" name="1" src="../IMAGENS/PESOS/1.png" draggable="true" ondragstart="drag(event)" width="35" height="60">
+		<img id="02" name="2" src="../IMAGENS/PESOS/2.png" draggable="true" ondragstart="drag(event)" width="35" height="60" >
+		<img id="03" name="3" src="../IMAGENS/PESOS/3.png" draggable="true" ondragstart="drag(event)" width="35" height="60">
+		<img id="04" name="4" src="../IMAGENS/PESOS/4.png" draggable="true" ondragstart="drag(event)" width="35" height="60" >
+		<img id="05" name="5" src="../IMAGENS/PESOS/5.png" draggable="true" ondragstart="drag(event)" width="35" height="60">
+		<img id="06" name="6" src="../IMAGENS/PESOS/6.png" draggable="true" ondragstart="drag(event)" width="35" height="60">
+		<img id="07" name="7" src="../IMAGENS/PESOS/7.png" draggable="true" ondragstart="drag(event)" width="35" height="60">
+		<img id="08" name="8" src="../IMAGENS/PESOS/8.png" draggable="true" ondragstart="drag(event)" width="35" height="60" >
+		<img id="09" name="9" src="../IMAGENS/PESOS/9.png" draggable="true" ondragstart="drag(event)" width="35" height="60">
+	</div>
+	
+	<img id="painel" src="../IMAGENS/painel.png" >
+	 <input type="text" id="RA" onkeypress="keyEnterPressed(event, 'A');">
+	<button  id="CA" onclick="checarA()" >A</button>
+	 <input type="text" id="RB" onkeypress="keyEnterPressed(event, 'B');">
+	<button id="CB" onclick="checarB()">B</button>
+	 <input type="text" id="RC" onkeypress="keyEnterPressed(event, 'C');">
+	<button id="CC" onclick="checarC()">C</button>
+	 <input type="text" id="RD" onkeypress="keyEnterPressed(event, 'D');">
+	<button id="CD" onclick="checarD()">D</button>
+	 <input type="text" id="RE" onkeypress="keyEnterPressed(event, 'E');">
+	<button id="CE" onclick="checarE()">E</button>
+	 <input type="text" id="RF" onkeypress="keyEnterPressed(event, 'F');">
+	<button id="CF" onclick="checarF()">F</button>
+	 <input type="text" id="RG" onkeypress="keyEnterPressed(event, 'G');">
+	<button id="CG" onclick="checarG()">G</button>
+	 <input type="text" id="RH" onkeypress="keyEnterPressed(event, 'H');">
+	<button id="CH" onclick="checarH()">H</button>
+	 <input type="text" id="RI" onkeypress="keyEnterPressed(event, 'I');">
+	<button id="CI" onclick="checarI()">I</button>
+	<!---<button id="save" onclick="savaTexto()">Salvar</button>
+	<button  id="mostra" onclick="mostraExp()">Mostrar Expressão</button>-->
+
+	<div id="boxFeedback">
+		<img id="feedback" src="../IMAGENS/feedback.png">
+		<a href="../HTML/fase2.html"><img id="btSim" src="../IMAGENS/sim.png"></a>
+		<a href="../HTML/fase1.html"><img id="btNao" src="../IMAGENS/nao.png"></a>
+		<div id="txtFeedback"> </div>
+	</div>
+
+<!---<canvas id="myCanvas" width="400" height="400" style="border:1px solid #000000;">
+</canvas>-->
+
+</body>
+
+	
+
+<!---<canvas id="myCanvas" width="400" height="400" style="border:1px solid #000000;">
+</canvas>-->
+
+</body>
+</html>

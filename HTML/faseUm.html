@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Balança Interativa</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/tipo1.css">
+	<script type="text/javascript" src= "../LIBS/FileSaver.js" DEFER></script>
+	<script type="text/javascript" src= "../JS/fase1.js" DEFER></script>
+</head>
+<body>
+
+	<p id="movimentos"> Movimentos: 0</p>
+	<img id="BALANCA" src="../IMAGENS/BALANCA/balanca.png" >
+	<img id="SINAL" src="../IMAGENS/SINAIS/igual.png" width="100px" heith="80px">
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"  ></div>
+	<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"  ></div>
+
+	<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"  >
+
+		<img id="A" src="../IMAGENS/SACOLAS/a.png" draggable="true" ondragstart="drag(event)" width="50" height="70">
+		<img id="B" src="../IMAGENS/SACOLAS/b.png" draggable="true" ondragstart="drag(event)" width="50" height="70" >
+		<img id="C" src="../IMAGENS/SACOLAS/c.png" draggable="true" ondragstart="drag(event)" width="50" height="70">
+		<img id="D" src="../IMAGENS/SACOLAS/d.png" draggable="true" ondragstart="drag(event)" width="50" height="70" >
+		<img id="E" src="../IMAGENS/SACOLAS/e.png" draggable="true" ondragstart="drag(event)" width="50" height="70">
+		<img id="F" src="../IMAGENS/SACOLAS/f.png" draggable="true" ondragstart="drag(event)" width="50" height="70" >
+		<img id="G" src="../IMAGENS/SACOLAS/g.png" draggable="true" ondragstart="drag(event)" width="50" height="70">
+		<img id="H" src="../IMAGENS/SACOLAS/h.png" draggable="true" ondragstart="drag(event)" width="50" height="70" >
+		<img id="I" src="../IMAGENS/SACOLAS/i.png" draggable="true" ondragstart="drag(event)" width="50" height="70">
+
+	</div>
+	<div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"  >
+
+		<img id="01" src="../IMAGENS/PESOS/1.png" draggable="true" ondragstart="drag(event)" width="50" height="70">
+		<img id="02" src="../IMAGENS/PESOS/2.png" draggable="true" ondragstart="drag(event)" width="50" height="70" >
+		<img id="03" src="../IMAGENS/PESOS/3.png" draggable="true" ondragstart="drag(event)" width="50" height="70">
+		<img id="04" src="../IMAGENS/PESOS/4.png" draggable="true" ondragstart="drag(event)" width="50" height="70" >
+		<img id="05" src="../IMAGENS/PESOS/5.png" draggable="true" ondragstart="drag(event)" width="50" height="70">
+		<img id="06" src="../IMAGENS/PESOS/6.png" draggable="true" ondragstart="drag(event)" width="50" height="70" >
+		<img id="07" src="../IMAGENS/PESOS/7.png" draggable="true" ondragstart="drag(event)" width="50" height="70">
+		<img id="08" src="../IMAGENS/PESOS/8.png" draggable="true" ondragstart="drag(event)" width="50" height="70" >
+		<img id="09" src="../IMAGENS/PESOS/9.png" draggable="true" ondragstart="drag(event)" width="50" height="70">
+	</div>
+	
+	 <input type="text" id="RA">
+	<button  id="CA" onclick="checarA()">A</button>
+	 <input type="text" id="RB">
+	<button id="CB" onclick="checarB()">B</button>
+	 <input type="text" id="RC">
+	<button id="CC" onclick="checarC()">C</button>
+	 <input type="text" id="RD">
+	<button id="CD" onclick="checarD()">D</button>
+	 <input type="text" id="RE">
+	<button id="CE" onclick="checarE()">E</button>
+	 <input type="text" id="RF">
+	<button id="CF" onclick="checarF()">F</button>
+	 <input type="text" id="RG">
+	<button id="CG" onclick="checarG()">G</button>
+	 <input type="text" id="RH">
+	<button id="CH" onclick="checarH()">H</button>
+	 <input type="text" id="RI">
+	<button id="CI" onclick="checarI()">I</button>
+	<button id="save" onclick="savaTexto()">Salvar</button>
+
+<!---<canvas id="myCanvas" width="400" height="400" style="border:1px solid #000000;">
+</canvas>-->
+
+</body>
+</html>
